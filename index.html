@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Live Your Life the Second Time Around</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎓 Live Your Life the Second Time Around</h1>
+
+    <div id="setup">
+      <input type="text" id="nameInput" placeholder="Enter your name" />
+      <select id="genderSelect">
+        <option value="👦">Boy 👦</option>
+        <option value="👧">Girl 👧</option>
+        <option value="🧑">Neutral 🧑</option>
+      </select>
+      <button onclick="startGame()">Start Life</button>
+    </div>
+
+    <div id="game" style="display:none;">
+      <div class="profile">
+        <p id="playerInfo"></p>
+      </div>
+
+      <div class="stats">
+        <p>💰 Money: <span id="money">100</span></p>
+        <p>📚 Grades: <span id="grades">50</span></p>
+        <p>😴 Energy: <span id="energy">50</span></p>
+        <p>😊 Happiness: <span id="happiness">50</span></p>
+        <p>❤️ Health: <span id="health">50</span></p>
+        <p>🎒 Grade Level: <span id="gradeLevel">Grade 7</span></p>
+        <p>📅 Year: <span id="levelDisplay">1</span> / 50</p>
+      </div>
+
+      <div id="scenario">
+        <p id="question">Scenario will appear here</p>
+        <div id="choices"></div>
+      </div>
+
+      <p id="result"></p>
+      <button onclick="restartGame()">🔁 Restart Life</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
