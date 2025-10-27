@@ -114,22 +114,6 @@ function restartGame() {
 // Sample scenarios (add more for full 50-level experience)
 const scenarios = [
   {
-    question: "Typhoon warning! Do you evacuate campus?",
-    choices: [
-      { text: "Stay indoors", money: 0, grades: 0, energy: 5, result: "You stayed safe." },
-      { text: "Evacuate", money: -20, grades: 0, energy: -5, result: "🏆 Survivor (+50)" },
-      { text: "Check if weekend", money: 0, grades: 0, energy: 0, result: "It was Saturday. No school!" }
-    ]
-  },
-  {
-    question: "Surprise quiz! You didn’t study.",
-    choices: [
-      { text: "Guess answers", money: 0, grades: -5, energy: -5, result: "You passed... barely." },
-      { text: "Skip class", money: 0, grades: -10, energy: 10, result: "You avoided it, but lost points." },
-      { text: "Ask seatmate for help", money: 0, grades: 5, energy: -5, result: "Risky but helpful!" }
-    ]
-  },
-  {
   question: "You’re offered a modeling gig during finals.",
   choices: [
     { text: "Accept it", money: 300, grades: -10, happiness: 15, result: "You’re trending!" },
@@ -576,3 +560,4 @@ const scenarios = [
     { text: "Skip it", money: 0, grades: 0, happiness: -5, result: "You missed a chance to reflect." }
   ]
 }
+
